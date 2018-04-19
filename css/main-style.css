@@ -31,12 +31,11 @@ body {
 
 .page-header {
     width: 100%;
+    height: 80vh;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    max-height: 924px;
-    min-height: calc(924px / 4);
-    padding-top: 3%;
+    justify-content: center;
+    padding: 50px 0;
     background-color: black;
     background-image: url("../img/page-header.jpg");
     background-repeat: no-repeat;
@@ -44,22 +43,22 @@ body {
     background-size: cover;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .header-logo {
     max-width: 205px;
-    max-height: 55px;
-}
-
-@media screen and (max-width: 750px) {
-    .header-logo {
-        padding-left: 5%;
-    }
+    min-width: 165px;
 }
 
 .header-logo a {
@@ -81,9 +80,8 @@ body {
 
 .main-nav {
     position: relative;
-    width: 520px;
+    width: 550px;
     height: 50px;
-    font-size: 1.5rem;
     color: white;
     text-decoration: none;
     list-style: none;
@@ -97,8 +95,8 @@ body {
 
 .main-nav li {
     float: left;
-    margin-right: 10%;
-    font-size: 17px;
+    margin-right: 39px;
+    font-size: 1.1rem;
 }
 
 .main-nav li:last-child {
@@ -121,10 +119,11 @@ body {
 }
 
 .first-text-block {
-    margin-left: 15.5%;
-    margin-top: 15%;
-    margin-bottom: 20%;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 .first-text-block h2 {
@@ -140,23 +139,11 @@ body {
 .about-the-shelter {
     width: 100%;
     margin: 0;
-    padding: 5% 0 5% 0;
+    padding: 50px 0 50px 0;
     background-color: #fafafa;
-    max-height: 1000px;
-    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-@media screen and (max-width: 345px){
-    .about-img {
-        width: 70%;
-    }
-
-    .about-text {
-        width: 80%;
-    }
 }
 
 .about-us-ul {
@@ -185,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 5% 0;
+    padding: 0 0 69px 0;
 }
 
 .make-a-friend h2 {
@@ -195,12 +182,6 @@ body {
     text-align: center;
     color: #545454;
     font-family: 'Quicksand', sans-serif;
-}
-
-@media screen and (max-width: 345px){
-    .make-a-friend h2 {
-        font-size: 40px;
-    }
 }
 
 .arrow-left,
@@ -251,7 +232,7 @@ body {
 .friends-common p {
     margin: 0;
     padding:0 0 20px 0;
-    font-size: 130%;
+    font-size: 23px;
 }
 
 .a-plate {
@@ -266,6 +247,8 @@ body {
 .btn-info {
     background-color: white;
     border: 3px solid #f1cdb3;
+    align-content: center;
+
     }
 
 .btn-info:hover {
@@ -276,27 +259,6 @@ body {
     background-color: #f1cdb3;
     color: #292929;
     border-radius: 50px 50px 50px;
-}
-
-@media screen and (max-width: 1150px) {
-
-    .friends-common:nth-of-type(2) {
-        display: none;
-    }
-
-    .friends-common:nth-of-type(4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .arrow-right {
-        display: none;
-    }
-
-    .arrow-left {
-        display: none;
-    }
 }
 
 .cat {
@@ -331,7 +293,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 3% 5% 5%;
+    padding: 0 0 80px 0;
 }
 
 .help-shelter h2 {
@@ -368,6 +330,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-height: 105px;
+    width: 135px;
 }
 
 .donation {
@@ -376,7 +339,8 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .donation .container {
@@ -392,7 +356,7 @@ body {
 }
 
 .donation-img {
-    padding-right: 3%;
+    padding-right: 30px;
 }
 
 .don-dog {
@@ -433,18 +397,12 @@ body {
     color: #545454;
 }
 
-@media screen and (max-width: 345px){
-    .credit-card {
-        width: 80%;
-    }
-}
-
 .page-footer {
     width: 100%;
     max-width: 1960px;
     color: white;
     margin: auto;
-    padding: 15px 0 0 0;
+    padding: 15px 15px 0 15px;
     box-sizing: border-box;
     background-color: black;
     background-image: url("../img/footer-back.png");
@@ -516,4 +474,124 @@ body {
 
 .icon p {
     margin-bottom: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .header-container {
+        width: 100%;
+    }
+
+    .header-top,
+    .first-text-block {
+        margin-left: 10px;
+    }
+
+    .first-text-block h2 {
+        font-size: 40px;
+    }
+
+    .first-text-block p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .header-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .header-top {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .header-logo {
+        padding-bottom: 20px;
+    }
+
+    .header-top,
+    .first-text-block {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .header-logo {
+        padding-bottom: 25px;
+    }
+    .main-nav {
+        width: 300px;
+        flex-wrap: nowrap;
+    }
+
+    .main-nav li {
+        padding-bottom: 7px;
+    }
+
+    .make-a-friend h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about-img {
+        width: 70%;
+    }
+
+    .about-text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .friends-common:nth-of-type(2) {
+        display: none;
+    }
+
+    .friends-common:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .arrow-right {
+        display: none;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 345px){
+    .credit-card {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1650px){
+    .help-shelter {
+        padding: 0 445px 80px 445px;
+    }
 }
