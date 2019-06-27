@@ -6,3 +6,5 @@ animal-shelter/.idea
 *.xml
 *.xml
 .idea/
+.idea/animal-shelter.iml
+.idea/workspace.xml

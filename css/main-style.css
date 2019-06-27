@@ -617,7 +617,11 @@ body {
         width: 300px;
         flex-wrap: nowrap;
 <<<<<<< HEAD
+<<<<<<< HEAD
         padding-bottom: 55px;
+=======
+        padding-bottom: 70px;
+>>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
 =======
         padding-bottom: 70px;
 >>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
@@ -629,7 +633,10 @@ body {
         font-size: 21px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
 }
 
 @media screen and (max-width: 1250px){
@@ -637,5 +644,8 @@ body {
         flex-wrap: nowrap;
         margin-right: 0;
     }
+<<<<<<< HEAD
+>>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
+=======
 >>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
 }
