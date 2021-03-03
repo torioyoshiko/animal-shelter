@@ -362,7 +362,7 @@ body {
 }
 
 .donation-info {
-    font-family: Georgia regular;
+    font-family: Georgia regular, serif;
     font-size: 17px;
 }
 
@@ -477,11 +477,7 @@ body {
 @media screen and (max-width: 800px) {
     .header-container {
         width: 100%;
-    }
-
-    .header-top,
-    .first-text-block {
-        margin-left: 10px;
+        padding-left: 30px;
     }
 
     .first-text-block h2 {
@@ -490,6 +486,10 @@ body {
 
     .first-text-block p {
         font-size: 20px;
+    }
+
+    .about-img {
+        margin: 0;
     }
 }
 
@@ -616,11 +616,7 @@ body {
     .main-nav {
         width: 300px;
         flex-wrap: nowrap;
-<<<<<<< HEAD
-        padding-bottom: 55px;
-=======
         padding-bottom: 70px;
->>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
     }
 }
 
@@ -628,8 +624,6 @@ body {
     .main-nav li{
         font-size: 21px;
     }
-<<<<<<< HEAD
-=======
 }
 
 @media screen and (max-width: 1250px){
@@ -637,5 +631,4 @@ body {
         flex-wrap: nowrap;
         margin-right: 0;
     }
->>>>>>> adf44c96e4133f2de0f4eace21d289ab82cee867
 }
