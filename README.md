@@ -1,2 +1,4 @@
 # animal-shelter
-nothing interesting here
+Landing for animal-shelter, my first work with html/css.
+
+https://torioyoshiko.github.io/animal-shelter/
